@@ -1,1 +1,1 @@
-{"version":3,"file":"mani.js","sourceRoot":"","sources":["../../src/commands/mani.ts"],"names":[],"mappings":";;AAEA,SAAgB,WAAW,CAAC,GAAoB;IAE5C,GAAG,CAAC,KAAK,CAAC,YAAY,CAAC,CAAC;IACxB,MAAM,EAAE,GAAG,GAAG,CAAC,IAAI,CAAC,EAAE,CAAC;IACvB,GAAG,CAAC,QAAQ,CAAC,WAAW,CAAC,EAAE,EAAC,oDAAoD,CAAC,CAAC;AACtF,CAAC;AALD,kCAKC"}
+{"version":3,"file":"mani.js","sourceRoot":"","sources":["../../src/commands/mani.ts"],"names":[],"mappings":";;AAEA,SAAgB,WAAW,CAAC,GAAoB;IAE5C,GAAG,CAAC,KAAK,CAAC,YAAY,CAAC,CAAC;IACxB;wHACoH;IACpH,GAAG,CAAC,gBAAgB,CAAC,oFAAoF,CAAC,CAAC;AAC/G,CAAC;AAND,kCAMC"}

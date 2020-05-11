@@ -1,6 +1,6 @@
 import {Telegraf} from 'telegraf'
 import { TelegrafContext } from 'telegraf/typings/context';
-export function maniCommand(ctx: TelegrafContext)
+export function agroCommand(ctx: TelegrafContext)
 {
     ctx.reply(`Is cute ^^`);
     /*const id = ctx.chat.id;
