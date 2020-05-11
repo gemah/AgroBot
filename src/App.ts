@@ -5,7 +5,7 @@ import * as commands from './commands'
 import * as test from './Scenes/ConvertTemperaturesWizard'
 const stage = new Stage([test.TemperatureWizard]);
 
-const bot = new Telegraf("1135406683:AAEweez7_rB2iNuS5zucL_mpwHWnYMOUpVU");//process.env.TOKEN);
+const bot = new Telegraf(process.env.TOKEN);
 console.log("Starting Bot");
 bot.use(session());
 bot.use(stage.middleware());
