@@ -13,10 +13,10 @@ bot.use(session());
 bot.use(stage.middleware());
 
 bot.command("convertunits",commands.convertCommand);
-
 bot.command("meme", commands.memeCommand);
 bot.command("mani", commands.maniCommand);
 bot.command("agro",commands.agroCommand);
+bot.command("gemah",commands.gemahCommand);
 
 commands.addConvertButtons(bot);
 
