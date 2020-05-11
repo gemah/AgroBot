@@ -3,7 +3,7 @@ import { TelegrafContext } from 'telegraf/typings/context';
 import path from 'path'
 import fs from 'fs'
 
-const folderPath:string = "./sticker/agro";
+const folderPath:string =path.resolve(__dirname, "../../sticker/agro")
 let fileNames: Array<string> = new Array();
 let index: number;
 
