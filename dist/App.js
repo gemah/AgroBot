@@ -12,7 +12,7 @@ const telegraf_2 = require("telegraf");
 const commands = __importStar(require("./commands"));
 const test = __importStar(require("./Scenes/ConvertTemperaturesWizard"));
 const stage = new telegraf_1.Stage([test.TemperatureWizard]);
-const bot = new telegraf_1.Telegraf("1135406683:AAEweez7_rB2iNuS5zucL_mpwHWnYMOUpVU"); //process.env.TOKEN);
+const bot = new telegraf_1.Telegraf(process.env.TOKEN);
 bot.use(telegraf_2.session());
 bot.use(stage.middleware());
 bot.command("convertunits", commands.convertCommand);
