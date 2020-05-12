@@ -10,6 +10,7 @@ let index: number;
 export function agroCommand(ctx: TelegrafContext)
 {
   
+    console.log(`${ctx.from.first_name}(${ctx.from.username}) used /agro`); 
 
     fs.readdirSync(folderPath).forEach(file => fileNames.push(file));
     
