@@ -15,7 +15,7 @@ export function agroCommand(ctx: TelegrafContext)
     
     index = getRandomInt(fileNames.length);
 
-    ctx.replyWithSticker(`https://raw.githubusercontent.com/Agronaut022/AgroBot/master/sticker/Agro/${fileNames[index]}`);
+    ctx.replyWithSticker(`https://raw.githubusercontent.com/Agronaut022/AgroBot/master/sticker/agro/${fileNames[index]}`);
     
 }
 
