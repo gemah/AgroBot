@@ -7,6 +7,8 @@ const folderPath:string =path.resolve(__dirname, "../../sticker/agro")
 let fileNames: Array<string> = new Array();
 let index: number;
 
+
+
 export function agroCommand(ctx: TelegrafContext)
 {
   

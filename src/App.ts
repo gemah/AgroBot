@@ -19,10 +19,12 @@ bot.command("mani", commands.maniCommand);
 bot.command("agro",commands.agroCommand);
 bot.command("gemah",commands.gemahCommand);
 
+
+
 commands.addConvertButtons(bot);
 
 
-bot.startPolling();
+bot.launch();
 
 function TimeStamp() : string{
     
