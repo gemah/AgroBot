@@ -2,14 +2,14 @@ import {Telegraf} from 'telegraf'
 import { TelegrafContext } from 'telegraf/typings/context';
 import path from 'path'
 import fs from 'fs'
-
+import {MyContext}from '../extensions'
 const folderPath:string =path.resolve(__dirname, "../../sticker/agro")
 let fileNames: Array<string> = new Array();
 let index: number;
 
 
 
-export function agroCommand(ctx: TelegrafContext)
+export function agroCommand(ctx: MyContext)
 {
   
     console.log(`${ctx.from.first_name}(${ctx.from.username}) used /agro`); 

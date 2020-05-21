@@ -1,28 +1,49 @@
 
 require('log-timestamp')(function(){ return TimeStamp()+"%s"});
-import {Telegraf, Stage} from 'telegraf'
+import  { Telegraf, Context } from 'telegraf'
+import {MyContext} from './extensions'
 import {session} from 'telegraf'
-import * as commands from './commands'
+
 import * as Scenes from './Scenes'
+import * as Game  from './Game'
+import * as commands  from './commands'
+import {registerCommands} from './commands'
+
 const dotenv = require('dotenv');
 dotenv.config();
+
 const stage = Scenes.stage;
 
 const bot = new Telegraf(process.env.TOKEN);
 console.log("Starting Bot");
-bot.use(session());
+bot.use(session({ getSessionKey: ctx => String(ctx.chat.id) }));
 bot.use(stage.middleware());
+registerCommands(bot);
 
-bot.command("convertunits",commands.convertCommand);
-bot.command("meme", commands.memeCommand);
-bot.command("mani", commands.maniCommand);
-bot.command("agro",commands.agroCommand);
-bot.command("gemah",commands.gemahCommand);
+bot.on("message",Game.onMessage);
+//U+1D43  U+1D47
+/*
+meme - sends a random meme
+convertunits - converts various units
+cancel - cancels wizards
+agro - Ice derg things
+start_game - starts a new Dice Game
+joing_game - lets users join a Started DiceGame
+list_players - lists all players in a DiceGame
+launch_game - launches a new game
+cancel_game - cancels a running Dice Game
+
+*/
+
+
+
+
+var test="s";
 
 
 
 commands.addConvertButtons(bot);
-
+Game.addGameButons(bot);
 
 bot.launch();
 
