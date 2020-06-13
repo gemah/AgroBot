@@ -12,6 +12,7 @@ export function memeCommand(ctx: TelegrafContext) : void
        if (err) ctx.reply("There was an error while Loading a meme uwu");
        else if(body.url != undefined)  ctx.reply(body.url);
        else ctx.reply("uwu error uwu");
+  
     });
  
 }

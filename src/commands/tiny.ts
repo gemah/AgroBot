@@ -36,7 +36,7 @@ export function tinyCommand(ctx: MyContext)
         'z':'ᶻ',
     };
     console.log(`${ctx.from.first_name}(${ctx.from.username}) used /tiny`);   
-    var text = ctx.message.text.match(/\/tiny ([\s\S]+)/);
+    var text = ctx.message.text.toLowerCase().match(/\/tiny ([\s\S]+)/);
     if(! (text))
         ctx.reply("Please include the sting you want to convert into tiny text\nFor example /tiny test");
     else

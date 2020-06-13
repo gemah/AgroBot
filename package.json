@@ -13,13 +13,17 @@
     "@telegraf/session": "^1.0.1",
     "axios": "^0.19.2",
     "console-stamp": "^0.2.9",
+    "countries-and-timezones": "^2.2.0",
     "dotenv": "^8.2.0",
     "log-timestamp": "^0.3.0",
+    "mysql": "^2.18.1",
     "request": "^2.88.2",
     "telegraf": "^3.38.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/countries-and-timezones": "^2.0.3",
+    "@types/mysql": "^2.15.12",
     "@types/node": "^13.13.5",
     "@types/request": "^2.48.4",
     "ts-loader": "^7.0.3",

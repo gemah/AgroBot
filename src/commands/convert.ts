@@ -16,7 +16,7 @@ export function convertCommand(ctx: TelegrafContext)
     )
 }
 
-export function addConvertButtons(bot: Telegraf<TelegrafContext>)
+export function addConvertCallbackButtons(bot: Telegraf<TelegrafContext>)
 {
     bot.action("TEMP", Stage.enter('temperature_converter'));
     bot.action("temp_yes", Stage.enter('temperature_converter'));
